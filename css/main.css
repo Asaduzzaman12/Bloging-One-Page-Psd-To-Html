@@ -1,0 +1,631 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Css start for header section */
+#headersection {
+    background: #292929;
+}
+.mainheder {}
+.mainheder .header_left {
+    float: left;
+}
+.mainheder .header_left h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'latobold';
+}
+.mainheder .header_right {
+    float: right;
+}
+
+/* Css start for navigation menu */
+.mainheder .header_right nav#mainmenu {}
+.mainheder .header_right nav#mainmenu ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.mainheder .header_right nav#mainmenu ul li {
+    float: left;
+    border-right: 1px solid #1D1D1D;
+}
+.mainheder .header_right nav#mainmenu ul li:first-child {
+     border-left: 1px solid #1D1D1D;
+}
+.mainheder .header_right nav#mainmenu ul li a {
+    display: block;
+    color: #fff;
+    padding: 41px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'latobold';
+}
+.mainheder .header_right nav#mainmenu ul li a:hover {
+    color:#58C93A;
+    border-bottom: 5px solid #58C93A;
+}
+.mainheder .header_right nav#mainmenu ul li.active a {
+    color:#58C93A;
+    border-bottom: 5px solid #58C93A;
+}
+/* Css end for navigation menu */
+
+
+
+/* Css end for header section */
+
+
+/* Css start for main content section */
+
+#maincontentSection {
+    border-top: 5px solid #1E1E1E;
+    margin-top: -5px;
+}
+#maincontentSection .maincontent {
+    border: 1px solid #E1E0E0;
+}
+#maincontentSection .post_content .post_left_content {
+    float: left;
+    width: 610px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#maincontentSection .post_content .single_post_content {
+    margin-bottom: 25px;
+}
+#maincontentSection .post_content .post_right_content {
+    width: 280px;
+    float: right;
+}
+#maincontentSection .post_content .single_post_content img {
+    width: 620px;
+    height: 310px;
+    padding-top: 80px;
+}
+#maincontentSection .post_content .single_post_content h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #4F4E4E;
+    font-weight: bold;
+    font-family: 'latobold';
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+#maincontentSection .post_content .single_post_content p {
+    color: #606060;
+    font-size: 22px;
+    font-family: 'winsoft_promedium';
+    padding-left: 25px;
+    margin-top: -10px;
+}
+#maincontentSection .post_content .single_post_content a.con_read {
+    font-size: 19px;
+    border: 1px solid #C2C2C2;
+    padding: 10px 27px;
+    border-radius: 30px;
+    color: #CAC9C9;
+    margin-left: 29px;
+    margin-top: 56px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#maincontentSection .post_content .single_post_content a.con_read:hover {
+    background: #727171;
+    color: #fff;
+}
+
+
+
+/* Css start for aside section */
+#maincontentSection .post_content .post_right_content .single_sidebar h3 {
+    font-size: 16px;
+    color: #6C6969;
+    background: #F8F8F8;
+    padding: 14px 11px;
+    text-transform: uppercase;
+    border-left: 3px solid #58C93A;
+    font-weight: bold;
+    font-family: 'latobold';
+    margin-top: 79px;
+}
+#maincontentSection .post_content .post_right_content .single_sidebar p {
+    font-size: 20px;
+    color: #A2A2A2;
+    font-family: 'winsoft_promedium';
+}
+#maincontentSection .post_content .post_right_content .single_sidebar input[type="text"], #maincontentSection .post_content .post_right_content .single_sidebar input[type="email"] {
+    width: 264px;
+    height: 45px;
+    border: 1px solid #E1E0E0;
+    color: #D5D5D5;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.single_sidebar .email_submit {
+    position: relative;
+}
+.single_sidebar .email_submit input[type="submit"] {
+    float: right;
+    background: url(../img/search-icon.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 79px;
+    right: 12px;
+    position: absolute;
+    text-indent: -99999px;
+    border: none;
+}
+/* Css end for aside section */
+
+
+/* Css start for next previous button */
+#maincontentSection .maincontent .next_previous_content {
+    overflow: hidden;
+    padding: 30px 0;
+    border-top: 1px solid #E1E0E0;
+}
+#maincontentSection .maincontent .next_previous_content .next_content {
+    float: left;
+}
+#maincontentSection .maincontent .next_previous_content .previous_content {
+    float: right;
+}
+#maincontentSection .maincontent .next_previous_content .next_content a {
+    font-size: 18px;
+    color: #818181;
+    text-transform: uppercase;
+    padding-left: 24px;
+    font-family: 'latobold';
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#maincontentSection .maincontent .next_previous_content .previous_content a {
+    font-size: 18px;
+    color: #818181;
+    text-transform: uppercase;
+    padding-right: 24px;
+    font-family: 'latobold';
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#maincontentSection .maincontent .next_previous_content .next_content a:hover, #maincontentSection .maincontent .next_previous_content .previous_content a:hover {
+    color: #999;
+}
+/* Css end for next previous button */
+
+
+/************* Css start for footer section ***************/
+#footersection {
+    background:#F8F8F8;
+    padding-bottom: 80px;
+}
+#footersection .main_footer_content {
+    text-align: center;
+}
+#footersection .main_footer_content h1 {
+    font-size: 40px;
+    color: #292929;
+    font-family: 'latobold';
+    padding-top: 60px;
+}
+#footersection .main_footer_content p {
+    font-size: 19px;
+    color: #A6A6A6;
+    font-family: 'winsoft_promedium';
+}
+#footersection .main_footer_content p span {
+    font-weight: bold;
+}
+#footersection .main_footer_content .social {
+    overflow: hidden;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-left: 45px;
+}
+#footersection .main_footer_content .social .facebook {
+    background: #9b9999;
+    padding: 10px 21px;
+    margin-right: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#footersection .main_footer_content .social .facebook:hover {
+    background:#516FAD;
+}
+#footersection .main_footer_content .social .facebook i, #footersection .main_footer_content .social .twitter i, #footersection .main_footer_content .social .behance i, #footersection .main_footer_content .social .dribble i {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 20px;
+}
+#footersection .main_footer_content .social .twitter {
+    background: #9b9999;
+    padding: 10px 18px;
+    margin-right: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#footersection .main_footer_content .social .twitter:hover {
+    background: #1DA1F2;
+}
+#footersection .main_footer_content .social .behance {
+    background: #9b9999;
+    padding: 10px 15px;
+    margin-right: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#footersection .main_footer_content .social .behance:hover {
+    background: #143AC3;
+}
+#footersection .main_footer_content .social .behance:hover {
+
+}
+#footersection .main_footer_content .social .dribble {
+    background: #9b9999;
+    padding: 10px 16px;
+    margin-right: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#footersection .main_footer_content .social .dribble:hover {
+    background: #DF3E7B;
+}
+
+
+#footersection .main_footer_content .social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footersection .main_footer_content .social ul li {
+    float: left;
+}
+#footersection .main_footer_content .social ul li a {}
+#footersection .main_footer_content .social ul li a:hover {}
+/* Css end for footer section */
+
+
+
+/* Css end for main content section */
+
+
+/* Css start for Scroll Up button */
+.Top_button {
+    display: inline-block;
+    font-size: 30px;
+    background: #9f9c9c;
+    color: #fff;
+    padding: 5px 17px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #282323;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+.Top_button:hover {
+    background: #ddd;
+    color:#000;
+}
+.Top_button i {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
